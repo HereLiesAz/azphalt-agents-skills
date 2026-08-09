@@ -8,7 +8,7 @@ Claude Code.
 ## What's here
 
 ```
-agents/     10 Claude Code subagents (.claude/agents format — Claude Code only)
+agents/     11 Claude Code subagents (.claude/agents format — Claude Code only)
 skills/     6 portable agent skills (SKILL.md — the open standard; works beyond Claude Code)
 azphalt/    builds skills/ into one dev-workflow-skills.azp (kind:"skill") for the azphalt marketplace
 ```
@@ -62,6 +62,7 @@ npm run build   # → dev-workflow-skills-1.0.0.azp
 | `devops-engineer` | Sets up or improves CI/CD pipelines, containers, and infrastructure-as-code |
 | `documentation-engineer` | Writes READMEs, API reference docs, and runbooks |
 | `performance-engineer` | Profiles and optimizes CPU/memory/latency bottlenecks, measurement-first |
+| `glee` | Adversarial post-hoc auditor — tears apart code, docs, and claims rather than reviewing pre-emptively. Run after a change or before a PR, not instead of `code-reviewer`. |
 
 ## The skills
 
@@ -86,6 +87,11 @@ community's most-praised public collections:
   (MIT) — 24k+ ★, whose 10-category breakdown shaped which roles this collection covers.
 - [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's own official skills repository,
   the authoritative source for `SKILL.md` structure and authoring conventions.
+
+`glee` is the one agent here not modeled on those collections — it's an existing project agent (from
+[azphalt](https://github.com/HereLiesAz/azphalt)'s own `.claude/agents/`), included as-is because an
+adversarial post-hoc auditor is a genuinely different, complementary role to the pre-emptive reviewers
+above, not a restyled `code-reviewer`.
 
 ## License
 
