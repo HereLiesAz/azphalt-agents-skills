@@ -1,0 +1,15 @@
+{
+  "name": "azphalt-dev-workflow-skills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds the dev-workflow-skills.azp package (kind:\"skill\") from ../skills/.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "@azphalt/azp": "^0.4.0"
+  },
+  "license": "MIT",
+  "author": "HereLiesAz"
+}

@@ -1,0 +1,46 @@
+{
+  "azphalt": "0.1",
+  "id": "com.hereliesaz.azphalt.dev-workflow-skills",
+  "name": "Dev Workflow Skills",
+  "version": "1.0.0",
+  "author": "HereLiesAz",
+  "description": "Six agent skills for everyday software engineering workflows: conventional commits, changelog writing, TDD, SQL query optimization, API contract design, and blameless incident postmortems.",
+  "homepage": "https://github.com/HereLiesAz/azphalt-agents-skills",
+  "license": "MIT",
+  "compat": ">=0.1",
+  "kind": "skill",
+  "skill": {
+    "skills": [
+      {
+        "id": "conventional-commits",
+        "name": "Conventional Commits",
+        "description": "Write Conventional Commits-formatted commit messages and validate existing ones."
+      },
+      {
+        "id": "changelog-writer",
+        "name": "Changelog Writer",
+        "description": "Draft a CHANGELOG entry or release notes from a range of commits, merged PRs, or a diff."
+      },
+      {
+        "id": "tdd-workflow",
+        "name": "TDD Workflow",
+        "description": "Implement a feature or fix a bug using strict red-green-refactor test-driven development."
+      },
+      {
+        "id": "sql-query-optimizer",
+        "name": "SQL Query Optimizer",
+        "description": "Analyze and optimize a slow SQL query using its execution plan."
+      },
+      {
+        "id": "api-contract-design",
+        "name": "API Contract Design",
+        "description": "Design an API contract (REST/OpenAPI, GraphQL, or RPC) before implementation, or review an existing one."
+      },
+      {
+        "id": "incident-postmortem",
+        "name": "Incident Postmortem",
+        "description": "Write a blameless postmortem for a production incident from a timeline, logs, or a description of what happened."
+      }
+    ]
+  }
+}
